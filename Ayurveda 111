@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayurveda Gyan - Prakritik Upchar & Herbs</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f4f9f4; color: #333; line-height: 1.6; }
+        header { background: #2e7d32; color: white; padding: 25px; text-align: center; }
+        header h1 { margin-bottom: 5px; }
+        .lang-switch { margin-top: 10px; }
+        .lang-btn { background: #fff; color: #2e7d32; border: none; padding: 5px 12px; cursor: pointer; font-weight: bold; border-radius: 4px; margin: 0 3px; }
+        .lang-btn:hover { background: #c8e6c9; }
+        
+        nav { background: #1b5e20; padding: 12px; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 1.1em; }
+        nav a:hover { text-decoration: underline; }
+
+        .container { max-width: 1100px; margin: 20px auto; padding: 25px; background: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h2 { color: #2e7d32; margin-bottom: 20px; border-bottom: 2px solid #a5d6a7; padding-bottom: 8px; }
+        
+        /* Grid for herbs */
+        .herbs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 20px; }
+        .herb-card { background: #e8f5e9; border: 1px solid #c8e6c9; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .herb-card img { width: 100%; height: 200px; object-fit: cover; }
+        .herb-content { padding: 15px; }
+        .herb-content h3 { color: #1b5e20; margin-bottom: 8px; }
+        .herb-content p { font-size: 0.95em; margin-bottom: 6px; }
+
+        footer { text-align: center; padding: 15px; background: #2e7d32; color: white; margin-top: 30px; }
+        
+        /* Language classes */
+        .en { display: none; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🌿 Ayurveda Gyan / आयुर्वेद ज्ञान</h1>
+        <p class="hi">Prakritik Jivan aur Jadi-Butiyan</p>
+        <p class="en">Natural Living & Medicinal Herbs</p>
+        <div class="lang-switch">
+            <button class="lang-btn" onclick="setLanguage('hi')">हिंदी</button>
+            <button class="lang-btn" onclick="setLanguage('en')">English</button>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#home" class="hi">परिचय</a><a href="#home" class="en">Home</a>
+        <a href="#herbs" class="hi">प्रमुख जड़ी-बूटियाँ</a><a href="#herbs" class="en">Medicinal Herbs</a>
+        <a href="#remedies" class="hi">घरेलू नुस्खे</a><a href="#remedies" class="en">Home Remedies</a>
+    </nav>
+
+    <div class="container" id="home">
+        <h2 class="hi">आयुर्वेद क्या है?</h2>
+        <h2 class="en">What is Ayurveda?</h2>
+        <p class="hi">आयुर्वेद दुनिया की सबसे पुरानी चिकित्सा प्रणालियों में से एक है। यह प्रकृति के करीब रहकर बीमारियों को जड़ से खत्म करने और शरीर को स्वस्थ रखने पर जोर देती है। यहाँ आपको सभी प्रमुख जड़ी-बूटियों और उनके लाभों की जानकारी हिंदी और अंग्रेजी दोनों में मिलेगी।</p>
+        <p class="en">Ayurveda is one of the world's oldest holistic healing systems. It emphasizes treating illnesses from the root and maintaining overall body wellness by living close to nature. Here you will find information about major medicinal herbs and their benefits in both Hindi and English.</p>
+    </div>
+
+    <div class="container" id="herbs">
+        <h2 class="hi">प्रमुख जड़ी-बूटियाँ (Medicinal Herbs)</h2>
+        <h2 class="en">Major Medicinal Herbs</h2>
+        
+        <div class="herbs-grid">
+            <!-- Herb 1: Tulsi -->
+            <div class="herb-card">
+                <img src="https://images.unsplash.com/photo-1608686207856-001b95cf60ca?auto=format&fit=crop&w=600&q=80" alt="Tulsi">
+                <div class="herb-content">
+                    <h3 class="hi">1. तुलसी (Tulsi / Holy Basil)</h3>
+                    <h3 class="en">1. Holy Basil (Tulsi)</h3>
+                    <p class="hi"><strong>लाभ:</strong> सर्दी-खांसी, इम्युनिटी बढ़ाने और तनाव कम करने में बेहद मददगार।</p>
+                    <p class="en"><strong>Benefits:</strong> Highly effective for cold, cough, boosting immunity, and reducing stress.</p>
+                </div>
+            </div>
+
+            <!-- Herb 2: Ashwagandha -->
+            <div class="herb-card">
+                <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80" alt="Ashwagandha">
+                <div class="herb-content">
+                    <h3 class="hi">2. अश्वगंधा (Ashwagandha)</h3>
+                    <h3 class="en">2. Ashwagandha</h3>
+                    <p class="hi"><strong>लाभ:</strong> शारीरिक ताकत, ऊर्जा और मानसिक शांति के लिए रामबाण औषधि।</p>
+                    <p class="en"><strong>Benefits:</strong> A powerful herb for physical strength, stamina, and mental calmness.</p>
+                </div>
+            </div>
+
+            <!-- Herb 3: Aloe Vera -->
+            <div class="herb-card">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" alt="Aloe Vera">
+                <div class="herb-content">
+                    <h3 class="hi">3. घृतकुमारी (Aloe Vera / Gwar Patha)</h3>
+                    <h3 class="en">3. Aloe Vera</h3>
+                    <p class="hi"><strong>लाभ:</strong> त्वचा की चमक, पाचन तंत्र और बालों के स्वास्थ्य के लिए फायदेमंद।</p>
+                    <p class="en"><strong>Benefits:</strong> Beneficial for skin glow, digestive health, and hair nourishment.</p>
+                </div>
+            </div>
+
+            <!-- Herb 4: Giloy -->
+            <div class="herb-card">
+                <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=600&q=80" alt="Giloy">
+                <div class="herb-content">
+                    <h3 class="hi">4. गिलोय (Giloy / Guduchi)</h3>
+                    <h3 class="en">4. Giloy (Guduchi)</h3>
+                    <p class="hi"><strong>लाभ:</strong> शरीर की रोग प्रतिरोधक क्षमता (Immunity) को मजबूत करता है और बुखार उतारता है।</p>
+                    <p class="en"><strong>Benefits:</strong> Strengthens the immune system and helps reduce chronic fevers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="hi">&copy; 2026 आयुर्वेद ज्ञान. सभी अधिकार सुरक्षित।</p>
+        <p class="en">&copy; 2026 Ayurveda Gyan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function setLanguage(lang) {
+            const hiElements = document.querySelectorAll('.hi');
+            const enElements = document.querySelectorAll('.en');
+            
+            if (lang === 'hi') {
+                hiElements.forEach(el => el.style.display = 'block');
+                enElements.forEach(el => el.style.display = 'none');
+            } else {
+                hiElements.forEach(el => el.style.display = 'none');
+                enElements.forEach(el => el.style.display = 'block');
+            }
+        }
+        // Default language
+        setLanguage('hi');
+    </script>
+
+</body>
+</html>
